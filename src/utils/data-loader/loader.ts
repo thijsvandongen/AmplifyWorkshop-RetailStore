@@ -1,7 +1,7 @@
 import type { Schema } from "../../../amplify/data/resource";
 import { generateClient } from 'aws-amplify/api';
 
-const SOURCE_BUCKET_URL = '<insert CloudFront URL here>';
+const SOURCE_BUCKET_URL = "http://d16mrqavv7we76.cloudfront.net";
 
 import categories from "./categories.json";
 import products from "./products.json";
@@ -21,7 +21,7 @@ async function LoadSampleData(statusCallback: (status: StatusUpdate) => void) {
     const client = generateClient<Schema>({
         authMode: "userPool"
     });
-    
+
     let localStatus: StatusUpdate = {
         categoryProgress: 0,
         categoryStatus: "in-progress",
@@ -40,7 +40,7 @@ async function LoadSampleData(statusCallback: (status: StatusUpdate) => void) {
             limit: 200,
             selectionSet: [ 'id' ]
         });
-        
+
         if ( catErrors !== undefined ) {
             console.error(catErrors);
             localStatus["categoryStatus"] = "error";
@@ -48,7 +48,7 @@ async function LoadSampleData(statusCallback: (status: StatusUpdate) => void) {
         } else {
             currCategoryCount = catSub.length;
         }
-        
+
         const { errors: prodErrors, data: prodSub, nextToken } = await client.models.Product.list({
             limit: 3000,
             selectionSet: [ 'id' ]
@@ -72,7 +72,7 @@ async function LoadSampleData(statusCallback: (status: StatusUpdate) => void) {
             }
         }
         statusCallback(localStatus);
-        
+
         // Process categories
         const categoriesMap = {} as {
             [name: string]: {
@@ -92,14 +92,14 @@ async function LoadSampleData(statusCallback: (status: StatusUpdate) => void) {
                 styles: []
             };
         }
-        
+
         // Process products
         for (const prod of products) {
             if (!categoriesMap[prod.category].styles.includes(prod.style)) {
                 categoriesMap[prod.category].styles.push(prod.style);
             }
         }
-        
+
         // Load categories - only load if categories haven't been loaded already
         let numCategories: number = categories.length;
         if ( currCategoryCount !== numCategories ) {
@@ -138,7 +138,7 @@ async function LoadSampleData(statusCallback: (status: StatusUpdate) => void) {
             localStatus["categoryResultText"] = "Categories have already been loaded!";
             statusCallback(localStatus);
         }
-        
+
         // Load products
         let numProducts: number = products.length;
         if ( currProductCount !== numProducts ) {
