@@ -12,7 +12,11 @@ const retailStoreSchema = a.schema({
     style: a.string(),
     categoryProductsId: a.id(),
     category: a.belongsTo('Category', 'categoryProductsId'),
-  }).authorization(allow => [allow.publicApiKey()]),
+    }).authorization(allow => [
+    allow.publicApiKey().to(['read']),
+    allow.owner(),
+    allow.group('Admin'),
+  ]),
     Category: a.model({
     id: a.id().required(),
     name: a.string().required(),
@@ -20,7 +24,10 @@ const retailStoreSchema = a.schema({
     image: a.string(),
     styles: a.string().array(),
     products: a.hasMany('Product', 'categoryProductsId'),
-  }).authorization(allow => [allow.publicApiKey()])s
+    }).authorization(allow => [
+    allow.publicApiKey().to(['read']),
+    allow.group('Admin'),
+  ])
 });
 
 export type Schema = ClientSchema<typeof retailStoreSchema>;
