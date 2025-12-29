@@ -14,7 +14,7 @@
     "@cloudscape-design/component-toolkit": "^1.0.0-beta.90",
     "@cloudscape-design/components": "^3.0.922",
     "@cloudscape-design/global-styles": "^1.0.38",
-    "aws-amplify": "^6.13.4",
+    "aws-amplify": "^6.15.9",
     "dotenv": "^16.4.7",
     "eslint-config-next": "^15.2.2",
     "next": "^14.2.24",
@@ -23,19 +23,21 @@
     "react-router-dom": "^6.30.0"
   },
   "devDependencies": {
+    "@aws-amplify/backend": "^1.19.0",
+    "@aws-amplify/backend-cli": "^1.8.1",
     "@types/node": "22.13.10",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@typescript-eslint/eslint-plugin": "^8.26.1",
     "@typescript-eslint/parser": "^8.26.1",
     "aws-cdk": "^2.1004.0",
-    "aws-cdk-lib": "^2.183.0",
-    "constructs": "^10.4.2",
-    "esbuild": "^0.25.1",
+    "aws-cdk-lib": "^2.216.0",
+    "constructs": "^10.4.4",
+    "esbuild": "^0.25.12",
     "eslint": "^9.22.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.2"
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   }
 }
