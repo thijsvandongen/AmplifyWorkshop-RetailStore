@@ -1,0 +1,142 @@
+﻿[
+  {
+    "id": "bfa640a4-2e54-4317-ba62-80413a40ebe9",
+    "name": "Apparel",
+    "description": "Clothing, outer garments and formal attire",
+    "image": "6bd74f2d-90c0-4ca6-9663-f3bbe9bf405b.jpg",
+    "has_gender_affinity": true
+  },
+  {
+    "id": "1ec4cea3-b2e6-49cd-8cd8-a24d123ff081",
+    "name": "Footwear",
+    "description": "shoes, boots, sandles and flip-flops",
+    "image": "22552eb1-57f1-4fa3-a93a-a9fa22851f9f.jpg",
+    "has_gender_affinity": true
+  },
+  {
+    "id": "f37115d4-18b6-4dbb-86dc-7ddcb9b5851a",
+    "name": "Outdoors",
+    "description": "Outside structures and related items",
+    "image": "7160b264-e3ed-4ac3-9dd7-2c537b00e5ed.jpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "673e90db-9581-4b47-bf3c-c07b63009dec",
+    "name": "Electronics",
+    "description": "Electronic goods including personal electronics",
+    "image": "3b145528-d5fc-4c2a-b2a5-e119128caa5f.jpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "75a8428d-395f-46a2-91b4-1016699e15d1",
+    "name": "Beauty",
+    "description": "Beauty treatements and personal care items",
+    "image": "b87da3f8-9a3e-417d-abd7-16329c5be1ba.jpg",
+    "has_gender_affinity": true
+  },
+  {
+    "id": "28afa242-5cf5-4356-b8d9-149d7dda5187",
+    "name": "Jewelry",
+    "description": "Formal and casual jewelry",
+    "image": "2ad09e8e-fd41-4d29-953e-546b924d7cb8.jpg",
+    "has_gender_affinity": true
+  },
+  {
+    "id": "54301b6a-03f4-4eeb-9372-ff5d223c5865",
+    "name": "Accessories",
+    "description": "Personal accessories including hand-bags, scarves, personal planners and diaries",
+    "image": "2b67230f-dc22-462e-9afe-c9e459f74093.jpg",
+    "has_gender_affinity": true
+  },
+  {
+    "id": "0cb85323-227b-4b6d-a974-cd708f330dbc",
+    "name": "Housewares",
+    "description": "Homeware including kitchenware",
+    "image": "1e96e374-be23-4c97-b87e-b5c45cb8999f.jpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "db4e3493-3b70-48e6-a795-e1da3f693cce",
+    "name": "Homedecor",
+    "description": "Home decor including portable lighting and pictures",
+    "image": "01a8978b-2a84-4dbd-acc4-aff74a468681.jpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "2b4b9d06-06e5-4054-8ef6-70c38f080bd9",
+    "name": "Furniture",
+    "description": "Indoor furniture including soft furnishing",
+    "image": "8b9733b9-cbea-4de3-978b-5e3f0e8c796c.jpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "49a4d90b-db4d-4460-a1fd-2277f097b451",
+    "name": "Seasonal",
+    "description": "Seasonal products",
+    "image": "6f04daee-7387-442f-bc99-a9b0072b29ce.jpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "0733cabb-bc55-40a9-b8fa-2976f5530c35",
+    "name": "Floral",
+    "description": "Cut flowers, vases and indoor plants",
+    "image": "4bb66b8a-cf13-4959-87ce-ca506fa568a2.jpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "aca40017-3ae9-4831-b9e1-e2d58fb41828",
+    "name": "Books",
+    "description": "Books, magazines and journals",
+    "image": "5d37a44b-d121-426e-b528-59e603ba5923.jpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "99d343e4-6828-41d5-b07b-8b7d218c075b",
+    "name": "Groceries",
+    "description": "Consumable items including food and drinks",
+    "image": "a31ad4b3-f9a8-4a9b-a8b3-3034af7bacec.jpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "42d5bf20-19c9-462a-9a01-dfc57a854663",
+    "name": "Instruments",
+    "description": "Musical instruments and related items",
+    "image": "3f9a39b2-0d63-4751-b6ee-4ecd08dd2276.jpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "d75c8b10-bbe9-4579-b6b9-55eab34696a9",
+    "name": "Tools",
+    "description": "Indoor and outdoor tools",
+    "image": "8bffb5fb-624f-48a8-a99f-b8e9c64bbe29.jpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "5e1319b9-f6d6-44a7-8498-a532ae646342",
+    "name": "Hot dispensed",
+    "description": "Take-away hot drinks and snacks",
+    "image": "4f0c1b1d-87f8-4ee3-9db1-bddb4acc7908jpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "74c6492a-5f4e-4ecd-90ed-b29ea7b66edc",
+    "name": "Cold dispensed",
+    "description": "Prepackaged food and drink items",
+    "image": "90f60d9d-146d-4a22-95bb-60b66b97fe4ajpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "878ab4dd-9ea6-4af4-b95d-29a8a8128138",
+    "name": "Food service",
+    "description": "Delivered food and drinks",
+    "image": "00d41b99-9fa6-4f88-90f6-10f6fe1b4076jpg",
+    "has_gender_affinity": false
+  },
+  {
+    "id": "a12aa27f-369f-4b0e-94e0-3c84551a8f6f",
+    "name": "Salty snacks",
+    "description": "Snacks and sweets",
+    "image": "9c1a2048-7aac-4565-b836-d8d4f726322cjpg",
+    "has_gender_affinity": false
+  }
+]
