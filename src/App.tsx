@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ThemeProvider, Authenticator } from '@aws-amplify/ui-react';
 
 import '@aws-amplify/ui-react/styles.css';
-import { ThemeProvider } from '@aws-amplify/ui-react';
 import { Category, Recommended, Header, Footer, Product } from './components';
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
 
   return (
     <ThemeProvider>
+      <Authenticator>
         <Router basename={baseURL}>
           <Header />
           <Routes>
@@ -19,7 +20,9 @@ function App() {
           </Routes>
           <Footer />
         </Router>
+      </Authenticator>
     </ThemeProvider>
+
   );
 }
 
